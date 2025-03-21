@@ -16,7 +16,7 @@ export default function BookItem({ item }: BookProps) {
       <div className="z-20 bg-white/85 text-black italic text-sm px-1 mb-1">
         {item.author}
       </div>
-      <div className="z-20 bg-white/85 px-1">{item.description}</div>
+      <div className="z-20 bg-white/85 px-1 text-black">{item.description}</div>
     </div>
   );
 }

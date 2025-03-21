@@ -8,10 +8,7 @@ export default function ResultNumSelect({
 }: ResultNumSelectProps) {
   return (
     <>
-      <label
-        htmlFor="amount"
-        className="mr-2 text-sm font-medium text-gray-900 dark:text-white"
-      >
+      <label htmlFor="amount" className="mr-2 text-sm font-medium">
         Number of Results
       </label>
       <select
