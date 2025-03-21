@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Book } from "./types";
 
-export default function useData(quant: number) {
+export default function useFakerapiData(quant: number) {
   const makeUrl = (quantity: number) =>
     `https://fakerapi.it/api/v2/books?_quantity=${quantity}`;
   const [data, setData] = useState<Book[]>([]);

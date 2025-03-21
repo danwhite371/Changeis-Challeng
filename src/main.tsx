@@ -1,12 +1,12 @@
-import useData from "./useData";
 import BookItem from "./BookItem";
 import { Book } from "./types";
 import { useState } from "react";
 import ResultNumSelect from "./ResultNumSelect";
+import useFakerapiData from "./useFakerapiData";
 
 export default function Main() {
   const [numResults, setNumResults] = useState<number>(10);
-  const data = useData(numResults);
+  const data = useFakerapiData(numResults);
   return (
     <>
       <div className="flex justify-center items-center h-12 text-2xl font-bold border-b border-b-slate-300 mb-2">
