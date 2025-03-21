@@ -1,4 +1,4 @@
-# Dan White's Changeis Challeng
+# Dan White's Changeis Challenge
 
 ## To install
 

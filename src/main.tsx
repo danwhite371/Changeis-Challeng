@@ -10,7 +10,7 @@ export default function Main() {
   return (
     <>
       <div className="flex justify-center items-center h-12 text-2xl font-bold border-b border-b-slate-300 mb-2">
-        Dan White's Changeis Challeng
+        Dan White's Changeis Challenge
       </div>
       <div className="flex justify-center mb-2">
         <div className="w-64">
