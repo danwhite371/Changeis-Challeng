@@ -1,9 +1,8 @@
-// import { useState } from 'react'
-
 import "./App.css";
+import Main from "./main";
 
 function App() {
-  return <div>Hello</div>;
+  return <Main />;
 }
 
 export default App;
