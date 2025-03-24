@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Book } from "./types";
+import { Book } from "../types";
 
 export default function useFakerapiData(quant: number) {
   const makeUrl = (quantity: number) =>
