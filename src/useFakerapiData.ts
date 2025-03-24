@@ -14,15 +14,11 @@ export default function useFakerapiData(quant: number) {
         }
         const json = await response.json();
         setData(json.data);
-        console.log(json);
       } catch (e) {
         console.error(e);
       }
     }
-    console.log("Main - useEffect");
     getData();
   }, [quant]);
-  console.log("useData", quant);
-  console.log(data);
   return data;
 }
