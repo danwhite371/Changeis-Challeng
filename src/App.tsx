@@ -21,6 +21,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "./components/ui/carousel";
+import { HoverCard, HoverCardTrigger } from "./components/ui/hover-card";
+import { HoverCardContent } from "@radix-ui/react-hover-card";
 
 const resultValues = [5, 10, 15, 20, 30, 35];
 const defaultResultsValue = 10;
@@ -41,7 +43,29 @@ function App() {
                 </span>
               </a>
               <div className="flex items-center">
-                <Label className="mr-1">Results</Label>
+                <div className="mr-2">
+                  <HoverCard>
+                    <HoverCardTrigger>
+                      <Label className="dark:bg-slate-800 bg-slate-100 p-2 rounded-sm">
+                        Info
+                      </Label>
+                    </HoverCardTrigger>
+                    <HoverCardContent>
+                      <div className="bg-popover border border-dashed border-slate-300 dark:border-slate-500 p-2">
+                        <label className="font-bold">Used</label>
+                        <ul>
+                          <li>Vite</li>
+                          <li>TypeScript</li>
+                          <li>Tailwind</li>
+                          <li>Radix UI</li>
+                          <li>shadcn/ui</li>
+                        </ul>
+                      </div>
+                    </HoverCardContent>
+                  </HoverCard>
+                </div>
+
+                <Label className="mr-2">Results</Label>
                 <span className="mr-2">
                   <Select
                     onValueChange={(value) => setNumResults(Number(value))}
@@ -65,7 +89,7 @@ function App() {
           <div className="container-wrapper">
             <Tabs
               className="flex justify-center items-center mt-2"
-              defaultValue="carousel"
+              defaultValue="flex"
             >
               <TabsList>
                 <TabsTrigger value="flex">Flex</TabsTrigger>
