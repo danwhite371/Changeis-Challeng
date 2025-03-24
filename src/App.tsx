@@ -51,7 +51,7 @@ function App() {
                       </Label>
                     </HoverCardTrigger>
                     <HoverCardContent>
-                      <div className="bg-popover border border-dashed border-slate-300 dark:border-slate-500 p-2">
+                      <div className="bg-popover border border-dashed border-slate-300 rounded-lg dark:border-slate-500 p-2">
                         <label className="font-bold">Used</label>
                         <ul>
                           <li>Vite</li>
